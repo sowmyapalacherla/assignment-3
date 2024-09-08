@@ -1,0 +1,43 @@
+@import "~ag-grid-community/styles/ag-grid.css";
+@import "~ag-grid-community/styles/ag-theme-alpine.css";
+
+html {
+    overflow: hidden;
+  }
+  html {
+    overflow: auto;
+  }
+  
+.ag-grid-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;  
+}
+  .ag-grid {
+    flex: 1; 
+    overflow: hidden;
+   
+  }
+  
+  
+  @media (max-width: 768px) {
+    .ag-grid-container {
+      height: 80vh;
+     
+    }
+  }
+
+  .image{
+    height:200px;
+    width:100vw;
+    background-image: url("https://res.cloudinary.com/dv9pez6sa/image/upload/v1725796662/falling-autumn-leaves-before-sunset_xdmito.jpg");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  color:azure;
+  font-family: Space Grotesk, Arial, sans-serif;
+  font-size: 12px;
+  margin-top: 0px;
+  }
+  
