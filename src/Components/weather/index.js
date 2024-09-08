@@ -50,7 +50,7 @@ const Weather = () => {
       <p className='wind'>Wind Speed: {weatherData.wind.speed} m/s</p>
       <p className='pressure'>Pressure: {weatherData.main.pressure} hPa</p>
       </div>
-      {/* Add more details and optional features as needed */}
+      
     </div>
   );
 };

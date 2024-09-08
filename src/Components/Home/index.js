@@ -3,8 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
-import './index.css'; // Import CSS file for custom styles
-
+import './index.css';
 const apiStatusConsonants = {
   initial: 'INITIAL',
   success: 'SUCCESS',
@@ -17,9 +16,9 @@ const PAGE_SIZE = 10;
 const Home = () => {
   const [apiStatus, setApiStatus] = useState(apiStatusConsonants.initial);
   const [rowData, setRowData] = useState([]);
-  const [searchQuery, setSearchQuery] = useState(''); // State for search input
-  const [suggestions, setSuggestions] = useState([]); // State for autocomplete suggestions
-  const [showSuggestions, setShowSuggestions] = useState(false); // State to show/hide suggestions
+  const [searchQuery, setSearchQuery] = useState('');
+  const [suggestions, setSuggestions] = useState([]); 
+  const [showSuggestions, setShowSuggestions] = useState(false); 
   const [totalRecords, setTotalRecords] = useState(0);
   const navigate = useNavigate();
 
